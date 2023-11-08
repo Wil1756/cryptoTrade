@@ -1,9 +1,11 @@
 import Home from "./Home";
-import CryptoDetail from "./CryptoDetail"
-import Transaction from "./Transaction"
+import Portfolio from "./Portfolio";
+import Profile from "./Profile";
+import Market from "./Market";
 
 export {
     Home,
-    CryptoDetail,
-    Transaction
+    Portfolio,
+    Profile,
+    Market
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const CryptoDetail = ({navigation}: any) => {
+const Portfolio = ({navigation}: any) => {
     return ( 
         <View style={styles.container}>
-            <Text>Crypto Detail</Text>
-            <TouchableOpacity onPress={()=> navigation.navigate('Transaction')}>
-                <Text>Navigate to Transaction</Text>
+            <Text>Portfolio</Text>
+            <TouchableOpacity onPress={()=> navigation.navigate('profile')}>
+                <Text>Navigate to Profile</Text>
             </TouchableOpacity>
         </View>
      );
@@ -31,4 +31,4 @@ const styles =StyleSheet.create({
 
 })
  
-export default CryptoDetail;
+export default Portfolio;

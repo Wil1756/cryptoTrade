@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 
-const Transaction = () => {
+const Profile = () => {
     return ( 
         <View style={styles.container}>
-            <Text>Transaction</Text>
+            <Text>Profile</Text>
         </View>
      );
 };
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     }
 })
  
-export default Transaction;
+export default Profile;

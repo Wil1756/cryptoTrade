@@ -6,9 +6,6 @@ const Home = ({navigation}: any) => {
     return ( 
         <View style={styles.container}>
             <Text>Home</Text>
-            <TouchableOpacity onPress={()=> navigation.navigate('CryptoDetail')}>
-                <Text>Navigate to CryptoDetail</Text>
-            </TouchableOpacity>
         </View>
     );
 };

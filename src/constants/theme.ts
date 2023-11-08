@@ -2,15 +2,19 @@ import { Dimensions, Platform } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
-    primary: "#7F5DF0",     // Light purple
-    secondary: "#5D2DFD",   // Dark purple
+    primary: "#1E1E1E",
+    secondary: "#3B3B3B",
     white: "#fff",
+    lightGreen: "#4BEE70",
     black: "#000000",
-    green: "#37E39F",
-    red: "#F9A8BA",
-    gray: "#6A6A6A",
-    lightGray: "#dbdbdb",
-    lightGray1: "#f5f6fa",
+    red: "#D84035",
+    gray: "#212125",
+    gray1: "#1f1f1f",
+    lightGray: "#3B3B3B",
+    lightGray2: "#757575",
+    transparentWhite: 'rgba(255, 255, 255, 0.2)',
+    transparentBlack: 'rgba(0, 0, 0, 0.8)',
+    transparentBlack1: 'rgba(0, 0, 0, 0.4)',
 };
 
 export const SIZES = {
@@ -37,15 +41,15 @@ export const SIZES = {
 };
 
 export const FONTS = {
-    h1: { fontFamily: "Roboto-Black", fontSize: SIZES.h1, lineHeight: 36 },
-    h2: { fontFamily: "Roboto-Bold", fontSize: SIZES.h2, lineHeight: 30 },
-    h3: { fontFamily: "Roboto-Bold", fontSize: SIZES.h3, lineHeight: 22 },
-    h4: { fontFamily: "Roboto-Bold", fontSize: SIZES.h4, lineHeight: 22 },
-    body1: { fontFamily: "Roboto-Regular", fontSize: SIZES.body1, lineHeight: 36 },
-    body2: { fontFamily: "Roboto-Regular", fontSize: SIZES.body2, lineHeight: 30 },
-    body3: { fontFamily: "Roboto-Regular", fontSize: SIZES.body3, lineHeight: 22 },
-    body4: { fontFamily: "Roboto-Regular", fontSize: SIZES.body4, lineHeight: 22 },
-    body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 22 },
+    h1: { fontFamily: 'Roboto-Black', fontSize: SIZES.h1, lineHeight: 36 },
+    h2: { fontFamily: 'Roboto-Bold', fontSize: SIZES.h2, lineHeight: 30 },
+    h3: { fontFamily: 'Roboto-Bold', fontSize: SIZES.h3, lineHeight: 22 },
+    h4: { fontFamily: 'Roboto-Bold', fontSize: SIZES.h4, lineHeight: 22 },
+    body1: { fontFamily: 'Roboto-Regular', fontSize: SIZES.body1, lineHeight: 36 },
+    body2: { fontFamily: 'Roboto-Regular', fontSize: SIZES.body2, lineHeight: 30 },
+    body3: { fontFamily: 'Roboto-Regular', fontSize: SIZES.body3, lineHeight: 22 },
+    body4: { fontFamily: 'Roboto-Regular', fontSize: SIZES.body4, lineHeight: 22 },
+    body5: { fontFamily: 'Roboto-Regular', fontSize: SIZES.body5, lineHeight: 22 },
 };
 
 const appTheme = { COLORS, SIZES, FONTS };
