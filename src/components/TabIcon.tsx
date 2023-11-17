@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 
-import { FONTS, COLORS } from '../constants';
+import { COLORS } from '../constants';
 
 interface TabIconProps {
   focused: boolean;
@@ -34,7 +34,7 @@ const TabIcon: React.FC<TabIconProps> = ({ focused, isTrade, icon, iconStyle, la
                 ...iconStyle
             }}
         />
-        <Text style={{ color: COLORS.white, ...FONTS.h4, fontFamily: 'Roboto-Bold' }}>{label}</Text>
+        <Text style={{ color: COLORS.white,  fontFamily: 'Roboto-Bold' }}>{label}</Text>
       </View>
     );
   } else {
@@ -53,7 +53,6 @@ const TabIcon: React.FC<TabIconProps> = ({ focused, isTrade, icon, iconStyle, la
         <Text
           style={{
             color: focused ? COLORS.white : COLORS.secondary,
-            ...FONTS.h4,
             fontFamily: 'Roboto-Bold',
           }}
         >

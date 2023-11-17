@@ -1,12 +1,15 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import { MainLayout } from './';
 
 
 const Profile = () => {
     return ( 
-        <View style={styles.container}>
-            <Text>Profile</Text>
-        </View>
+        <MainLayout>
+            <View style={styles.container}>
+                <Text>Profile</Text>
+            </View>
+        </MainLayout>
      );
 };
 

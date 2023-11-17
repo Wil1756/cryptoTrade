@@ -1,36 +1,10 @@
-export const portfolio: {
-    balance: string;
-    changes: string;
-} = {
+export const portfolio = {
     balance: "12,724.33",
     changes: "+2.36%",
 };
 
-export interface TrendingCurrency {
-    id: number;
-    currency: string;
-    code: string;
-    image: string;
-    amount: string;
-    changes: string;
-    type: string;
-    description: string;
-    chartData: { x: number; y: number }[];
-    wallet: {
-        value: string;
-        crypto: string;
-    };
-    transactionHistory: {
-        id: number;
-        description: string;
-        amount: number;
-        currency: string;
-        type: string;
-        date: string;
-    }[];
-}
 
-export const trendingCurrencies: TrendingCurrency[] = [
+export const trendingCurrencies = [
     {
         id: 1,
         currency: "Bitcoin",
@@ -76,7 +50,7 @@ export const trendingCurrencies: TrendingCurrency[] = [
 
 ];
 
-export const transactionHistory: TrendingCurrency["transactionHistory"] = [
+export const transactionHistory = [
     {
         id: 1,
         description: "Sold Ethereum",
@@ -95,12 +69,8 @@ export const transactionHistory: TrendingCurrency["transactionHistory"] = [
     },
 ];
 
-export interface ChartOption {
-    id: number;
-    label: string;
-}
 
-export const chartOptions: ChartOption[] = [
+export const chartOptions = [
     {
         id: 1,
         label: "1 hr",

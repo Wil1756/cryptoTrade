@@ -1,12 +1,16 @@
-import react from 'react';
+import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { MainLayout } from './';
 
 
-const Home = ({navigation}: any) => {
+const Home = ({ navigation }: any) => {
     return ( 
-        <View style={styles.container}>
-            <Text>Home</Text>
-        </View>
+        <MainLayout>
+            <View style={styles.container}>
+                <Text>Home</Text>
+            </View>
+        </MainLayout>
+       
     );
 };
 

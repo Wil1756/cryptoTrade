@@ -1,14 +1,19 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { MainLayout } from './';
+
 
 const Portfolio = ({navigation}: any) => {
     return ( 
-        <View style={styles.container}>
-            <Text>Portfolio</Text>
-            <TouchableOpacity onPress={()=> navigation.navigate('profile')}>
-                <Text>Navigate to Profile</Text>
-            </TouchableOpacity>
-        </View>
+        <MainLayout>
+            <View style={styles.container}>
+                <Text>Portfolio</Text>
+                <TouchableOpacity onPress={()=> navigation.navigate('profile')}>
+                    <Text>Navigate to Profile</Text>
+                </TouchableOpacity>
+            </View>
+        </MainLayout>
+       
      );
 };
 

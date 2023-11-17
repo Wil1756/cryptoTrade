@@ -1,4 +1,4 @@
-const images: { [key: string]: any } = {
+const images = {
     banner: require('../../assets/images/banner.png'),
     bitcoin: require('../../assets/images/bitcoin.png'),
     ethereum: require('../../assets/images/ethereum.png'),

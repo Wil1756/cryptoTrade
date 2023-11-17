@@ -1,6 +1,6 @@
 
 
-const icons: { [key: string]: any } = {
+const icons = {
   backArrow: require("../../assets/icons/back_arrow.png"),
   home: require("../../assets/icons/home.png"),
   profile: require("../../assets/icons/profile.png"),
@@ -13,6 +13,10 @@ const icons: { [key: string]: any } = {
   settings: require("../../assets/icons/settings.png"),
   star: require("../../assets/icons/star.png"),
   trade: require("../../assets/icons/trade.png"),
+  close : require("../../assets/icons/close.png"),
+  send : require("../../assets/icons/send.png"),
+  withdraw : require("../../assets/icons/withdraw.png"),
+
 };
 
 export default icons;
