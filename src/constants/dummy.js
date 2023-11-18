@@ -1,103 +1,35 @@
-export const portfolio = {
-    balance: "12,724.33",
-    changes: "+2.36%",
-};
+export const holdings = [
+    {
+        id: "bitcoin",
+        qty: 888
+    },
+    {
+        id: "ethereum",
+        qty: 188
+    },
+    {
+        id: "dogecoin",
+        qty: 88888
+    }
+]
 
+export const profile = {
+    id: 8888888,
+    email: "byprogrammers@gmail.com",
+}
 
-export const trendingCurrencies = [
-    {
-        id: 1,
-        currency: "Bitcoin",
-        code: "BTC",
-        image: require("../../assets/images/bitcoin.png"),
-        amount: "29,455.74",
-        changes: "+7.24%",
-        type: "I",
-        description:
-            "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was released as open-source software.",
-        chartData: [
-            { x: 1, y: 2.5 },
-            { x: 1.5, y: 2 },
-            { x: 2, y: 2.3 },
-            { x: 2.5, y: 1.4 },
-            { x: 3, y: 1.5 },
-            { x: 3.5, y: 2.3 },
-            { x: 4, y: 2.8 },
-        ],
-        wallet: {
-            value: "170435.86",
-            crypto: "5.1",
-        },
-        transactionHistory: [
-            {
-                id: 1,
-                description: "Sold Bitcoin",
-                amount: -2.0034,
-                currency: "BTC",
-                type: "S",
-                date: "14:20 12 Apr",
-            },
-            {
-                id: 2,
-                description: "Bought Bitcoin",
-                amount: 2.0034,
-                currency: "BTC",
-                type: "B",
-                date: "14:20 12 Apr",
-            },
-        ],
-    },
-
-];
-
-export const transactionHistory = [
-    {
-        id: 1,
-        description: "Sold Ethereum",
-        amount: -2.0034,
-        currency: "ETH",
-        type: "S",
-        date: "14:20 12 Apr",
-    },
-    {
-        id: 2,
-        description: "Bought Ethereum",
-        amount: 2.0034,
-        currency: "ETH",
-        type: "B",
-        date: "14:20 12 Apr",
-    },
-];
-
-
-export const chartOptions = [
-    {
-        id: 1,
-        label: "1 hr",
-    },
-    {
-        id: 2,
-        label: "3 Days",
-    },
-    {
-        id: 3,
-        label: "1 Week",
-    },
-    {
-        id: 4,
-        label: "1 Month",
-    },
-    {
-        id: 5,
-        label: "3 Months",
-    },
-];
+export const settings = {
+    launchScreen: "Home",
+    currency: "USD",
+    appearance: "Dark",
+    language: "English",
+    faceId: true,
+}
 
 const dummyData = {
-    portfolio,
-    trendingCurrencies,
-    transactionHistory,
-    chartOptions,
+    holdings,
+    profile,
+    settings,
 };
 
 export default dummyData;
