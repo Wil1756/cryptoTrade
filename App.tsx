@@ -12,6 +12,8 @@ import rootReducer from './src/stores/rootReducer';
 
 const Stack = createStackNavigator();
 
+
+
 const store = configureStore({
   reducer: rootReducer,
   middleware: [thunk]
@@ -21,12 +23,15 @@ export default function App() {
   return (
     <Provider store={store}>
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName={'Home'}>
-      <Stack.Screen name='home' component={BottomTabs}/>
-      <Stack.Screen name='market' component={Market}/>
-      <Stack.Screen name='profile' component={Profile}/>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='home'>
+        <Stack.Screen name='home' component={BottomTabs} />
+        <Stack.Screen name='market' component={Market} />
+        <Stack.Screen name='profile' component={Profile}  options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
-    </Provider>
+  </Provider>
+
+
+
   );
 };

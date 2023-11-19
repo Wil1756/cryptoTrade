@@ -7,7 +7,7 @@ const Market = () => {
     return ( 
         <MainLayout>
             <View>
-                <Text>Market</Text>
+                <Text></Text>
             </View>
         </MainLayout>
         

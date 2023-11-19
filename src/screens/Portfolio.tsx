@@ -3,13 +3,11 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import { MainLayout } from './';
 
 
-const Portfolio = ({navigation}: any) => {
+const Portfolio = () => {
     return ( 
         <MainLayout>
             <View style={styles.container}>
-                <Text>Portfolio</Text>
-                <TouchableOpacity onPress={()=> navigation.navigate('profile')}>
-                    <Text>Navigate to Profile</Text>
+                <TouchableOpacity onPress={()=>''}>
                 </TouchableOpacity>
             </View>
         </MainLayout>

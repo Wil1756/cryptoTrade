@@ -7,6 +7,7 @@ import {connect} from 'react-redux';
 import { getHoldings, getCoinMarket } from '../stores/market/marketActions';
 import { useFocusEffect } from '@react-navigation/native';
 import { FONTS, SIZES, COLORS, icons, dummyData } from '../constants';
+import BalanceInfo from '../components/BalanceInfo';
 
 const Home = ({ getHoldings, getCoinMarket, myHoldings, coins }: any) => {
 
@@ -15,32 +16,46 @@ const Home = ({ getHoldings, getCoinMarket, myHoldings, coins }: any) => {
             getHoldings(dummyData.holdings);
             getCoinMarket();
         },[])
-   )
+    )
+
+    function renderTradeInfo(){
+        return (
+            <View style={{
+                paddingHorizontal: SIZES.padding,
+                borderBottomLeftRadius: 25,
+                borderBottomRightRadius: 25,
+                backgroundColor: COLORS.gray
+            }}>
+                {/* balance section */}
+                <BalanceInfo
+                    title="Your Wallet"
+                    displayAmount="45.00"
+                    changePct={2.30}
+                    containerStyle={{
+                        marginTop: 50
+                    }}
+                />
+            </View>
+        )
+    }
     return ( 
         <MainLayout>
-            <View style={styles.container}>
-                <Text>Home</Text>
+            <View style={{
+                flex: 1,
+                backgroundColor: COLORS.black
+            }}>
+                {/* header - wallet info */}
+                {renderTradeInfo()}
+
+                {/* chart */}
+
+                {/* buttons */}
             </View>
         </MainLayout>
        
     );
 };
 
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-   },
-   boxShadow:{
-    shadowColor:'#000',
-       shadowOffset:{width:0, height:4},
-       shadowOpacity: 0.30,
-       shadowRadius: 4.65,
-       elevation: 8
-   },
-
-})
  
 // export default Home;
 

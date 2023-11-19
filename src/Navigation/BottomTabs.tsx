@@ -46,6 +46,7 @@ const BottomTabs: React.FC<BottomTabsProps> = ({ setTradeModalVisibility, isTrad
     return (
         
         <Tab.Navigator screenOptions={{
+            headerShown: false,
             tabBarShowLabel: false,
             tabBarStyle :{
                 height: 140,
