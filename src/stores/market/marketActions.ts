@@ -50,8 +50,8 @@ export function getHoldings(
                 Accept: "application/json"
             }
         }).then((response) => {
-            console.log("GetHoldings")
-            console.log(response)
+            // console.log("GetHoldings")
+            // console.log(response)
             if (response.status === 200) {
                 // play with the data
 
@@ -126,8 +126,8 @@ export function getCoinMarket(
                 Accept: "application/json"
             }
         }).then((response) => {
-            console.log("GetCoinMarket")
-            console.log(response)
+            // console.log("GetCoinMarket")
+            // console.log(response)
             if (response.status === 200) {
                 dispatch(getCoinMarketSuccess(response.data))
             } else {

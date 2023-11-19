@@ -41,7 +41,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, isTradeModalVisible }
             {children}
 
             {/* dim background */}
-            {isTradeModalVisible && 
+            { isTradeModalVisible && 
             <Animated.View
                 style={{
                     position: 'absolute',

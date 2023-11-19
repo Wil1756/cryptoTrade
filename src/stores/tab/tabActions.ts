@@ -1,3 +1,8 @@
+export interface TabAction {
+    type: string;
+    payload: { isVisible: boolean }
+}
+
 export const SET_TRADE_MODAL_VISIBILITY = 'SET_TRADE_MODAL_VISIBILITY';
 
 
